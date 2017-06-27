@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="4" total="10" passed="6">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="21167" started-at="2017-05-11T21:39:29Z" finished-at="2017-05-11T21:39:51Z">
+    <groups>
+      <group name="Functional">
+        <method signature="ByTestNG.login()[pri:1, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="login" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test1()[pri:2, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test1" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test2()[pri:3, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test2" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test3()[pri:4, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test3" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test4()[pri:5, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test4" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test5()[pri:6, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test5" class="TestNGL3HW2.ByTestNG"/>
+      </group> <!-- Functional -->
+      <group name="Smoke">
+        <method signature="ByTestNG.login()[pri:1, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="login" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test1()[pri:2, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test1" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test2()[pri:3, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test2" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test3()[pri:4, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test3" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test4()[pri:5, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test4" class="TestNGL3HW2.ByTestNG"/>
+        <method signature="ByTestNG.test5()[pri:6, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test5" class="TestNGL3HW2.ByTestNG"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Command line test" duration-ms="21167" started-at="2017-05-11T21:39:29Z" finished-at="2017-05-11T21:39:51Z">
+      <class name="TestNGL3HW2.ByTestNG">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="beforeTest" is-config="true" duration-ms="3518" started-at="2017-05-11T14:39:29Z" finished-at="2017-05-11T14:39:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="login()[pri:1, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="login" duration-ms="7457" started-at="2017-05-11T14:39:33Z" description="Logining" finished-at="2017-05-11T14:39:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="test1()[pri:2, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test1" duration-ms="1950" started-at="2017-05-11T14:39:40Z" description="Go to user profile" depends-on-methods="TestNGL3HW2.ByTestNG.login" finished-at="2017-05-11T14:39:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test1 -->
+        <test-method status="PASS" signature="test2()[pri:3, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test2" duration-ms="738" started-at="2017-05-11T14:39:42Z" description="Push &#039;Edit Profile&#039; button" depends-on-methods="TestNGL3HW2.ByTestNG.login" finished-at="2017-05-11T14:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test2 -->
+        <test-method status="PASS" signature="test3()[pri:4, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test3" duration-ms="295" started-at="2017-05-11T14:39:43Z" description="Changing password by same" depends-on-methods="TestNGL3HW2.ByTestNG.login" finished-at="2017-05-11T14:39:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test3 -->
+        <test-method status="PASS" signature="test4()[pri:5, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test4" duration-ms="6663" started-at="2017-05-11T14:39:43Z" description="Test for not correct current user password" depends-on-methods="TestNGL3HW2.ByTestNG.login" finished-at="2017-05-11T14:39:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test4 -->
+        <test-method status="PASS" signature="test5()[pri:6, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="test5" duration-ms="419" started-at="2017-05-11T14:39:50Z" description="Test for not correct retype changed password" depends-on-methods="TestNGL3HW2.ByTestNG.login" finished-at="2017-05-11T14:39:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test5 -->
+        <test-method status="PASS" signature="closeApp()[pri:0, instance:TestNGL3HW2.ByTestNG@466ce8a9]" name="closeApp" is-config="true" duration-ms="109" started-at="2017-05-11T14:39:50Z" finished-at="2017-05-11T14:39:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- TestNGL3HW2.ByTestNG -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>
