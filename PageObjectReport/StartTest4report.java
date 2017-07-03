@@ -3,6 +3,7 @@
  */
 package PageObjectReport;
 
+import java.awt.AWTException;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -89,9 +90,9 @@ public class StartTest4report {
 		car.vehicle();
 		
 	}
-	
+////////////////////////////////========ADD_PHOTO=============///////////////////////////////	
 	@Test(priority =8, groups = { "Functional", "Smoke" }, enabled = true, description = "Photos add Page")
-	public void PhotosPage() throws InterruptedException{
+	public void PhotosPage() throws Exception{
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		PhotosPage pho = PageFactory.initElements(driver, PhotosPage.class);
 		pho.photo();

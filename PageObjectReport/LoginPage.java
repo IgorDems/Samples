@@ -44,7 +44,7 @@ public class LoginPage {
 	public void loginToWS(String uid, String pass) throws InterruptedException {
 		username.sendKeys(uid);
 		passwd.sendKeys(pass);
-		Thread.sleep(6000);
+		Thread.sleep(2000);
 		logbutton.click();
 	}
 }

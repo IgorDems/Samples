@@ -19,7 +19,6 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-
 public class TestSteps {
 	// System.setProperty("webdriver.chrome.driver","/Volumes/HDD/SeleniumWebDrv/chromedriver");
 
@@ -517,9 +516,60 @@ public class TestSteps {
 				.xpath("html/body/div[2]/section/div[1]/div/form/div[1]/div[2]/div[8]/fieldset/div/div[2]/div/div/button"
 						+ ""));
 		Thread.sleep(6000);
-		addphoto.sendKeys("");
+		addphoto.click();
 
-	
+		String file = "Ukraine.png";
+
+		StringSelection ss = new StringSelection(file);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+		Robot robot = new Robot();
+
+		robot.keyPress(KeyEvent.VK_META);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_META);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_META);
+		robot.keyPress(KeyEvent.VK_V);
+		robot.keyRelease(KeyEvent.VK_META);
+		robot.keyRelease(KeyEvent.VK_V);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_TAB);
+		robot.keyRelease(KeyEvent.VK_TAB);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_DOWN);
+		robot.keyRelease(KeyEvent.VK_DOWN);
+		robot.delay(1000);
+		robot.keyPress(KeyEvent.VK_ENTER);
+		robot.keyRelease(KeyEvent.VK_ENTER);
+
+		Thread.sleep(3000);
+		System.out.println("PICTURE WAS ATTACHED SUCCESSEFULL");
 		// Thread.sleep(1000);
 
 	}
@@ -531,18 +581,17 @@ public class TestSteps {
 				.findElement(By.xpath("html/body/div[2]/section/div/div/form/div[1]/div[2]/div[8]/ul/li[2]/a"));
 		Thread.sleep(2000);
 		finbutt.click();
-		Thread.sleep(2000);
 
-		WebElement okbutt = driver
-				.findElement(By.xpath(".//*[@id='ngdialog1']/div[2]/div/div/button[1][text()='YES']"));
-		Thread.sleep(2000);
-		okbutt.click();
+		// WebElement click =
+		// driver.findElement(By.xpath("//*[@id='ngdialog1']/div[2]/div/div")).click();
 
 	}
 
 	@Given("^Filled fillds")
 	public void Filled_fillds() throws InterruptedException {
 
+		System.out.println("REPORT IS CREATED AND READY FOR SUBMITION");
+		
 	}
 
 	@When("^Adding report")
@@ -553,6 +602,10 @@ public class TestSteps {
 		Thread.sleep(3000);
 		report.click();
 
+		WebElement okbutt = driver
+				.findElement(By.xpath(".//*[@id='ngdialog1']/div[2]/div/div/button[1][text()='YES']"));
+		okbutt.click();
+		System.out.println("REPORT WAS SUBMITED SUCCESSEFULL");
 		Thread.sleep(3000);
 	}
 

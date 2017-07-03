@@ -58,7 +58,7 @@ public class GangPage {
 		{
 			try {
 				WebElement ch = chboxs.get(i);
-				Thread.sleep(3000);
+//				Thread.sleep(3000);
 				ch.click();
 			} catch (Exception name) {
 
@@ -70,7 +70,7 @@ public class GangPage {
 		{
 			try {
 				WebElement ch1 = chboxs1.get(i);
-				Thread.sleep(3000);
+//				Thread.sleep(3000);
 				ch1.click();
 			} catch (Exception name) {
 
