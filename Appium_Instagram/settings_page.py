@@ -3,7 +3,7 @@ from Locators import Locator
 
 class SettingsPage(BasePage):
     def do_logout(self):
-        log_out = self.driver.find_element_by_android_uiautomator(Locator.log_out)
+        log_out = self.driver.find_element_by_xpath(Locator.log_out)
         log_out.click()
         print("logout clicked")
 

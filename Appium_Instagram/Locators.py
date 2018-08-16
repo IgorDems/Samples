@@ -27,8 +27,8 @@ class Locator(BasePage):
     share = "com.instagram.android:id/next_button_textview"
 
 # option_page locators
-
-    log_out = "com.instagram.android:id/row_simple_link_textview"
+    log_out = "//android.widget.TextView[@text='Log Out']"
+    #log_out = "com.instagram.android:id/row_simple_link_textview"
     confirm_logout = "com.instagram.android:id/button_positive"
 
 # profile_page locators
