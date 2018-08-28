@@ -17,7 +17,7 @@ class Locator(BasePage):
     avatar_button = "com.instagram.android:id/avatar_image_view"
     tab_icons = "com.instagram.android:id/tab_icon"
 
-# gallery_page locarors
+# gallery_page locators
 
     camera_button = "com.instagram.android:id/camera_shutter_button"
     next_button = "com.instagram.android:id/next_button_textview"
@@ -27,6 +27,7 @@ class Locator(BasePage):
     share = "com.instagram.android:id/next_button_textview"
 
 # option_page locators
+
     log_out = "//android.widget.TextView[@text='Log Out']"
     #log_out = "com.instagram.android:id/row_simple_link_textview"
     confirm_logout = "com.instagram.android:id/button_positive"
